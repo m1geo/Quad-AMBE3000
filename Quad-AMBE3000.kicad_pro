@@ -330,6 +330,14 @@
     [
       "6d4dde7d-405f-4cac-b7b4-92813472e831",
       "AMBE3000"
+    ],
+    [
+      "df0befc9-05f8-415a-a570-bc0f76fdc635",
+      "USB & UART Interface"
+    ],
+    [
+      "92183cc1-aa9d-441a-bbf6-7a4289b4d708",
+      "Power Supplies & Sequencing"
     ]
   ],
   "text_variables": {}

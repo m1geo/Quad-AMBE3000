@@ -312,7 +312,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "/media/nas/storage/PCBs/m1geo_g8ocv_template.kicad_wks",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -328,10 +328,6 @@
       ""
     ],
     [
-      "6d4dde7d-405f-4cac-b7b4-92813472e831",
-      "AMBE3000"
-    ],
-    [
       "df0befc9-05f8-415a-a570-bc0f76fdc635",
       "USB & UART Interface"
     ],
@@ -341,7 +337,19 @@
     ],
     [
       "1b9252c6-d989-41aa-9836-ad50f62b627b",
-      "AMBE-3000R"
+      "AMBE-3000R-A"
+    ],
+    [
+      "ff9a58b0-339c-4e92-887b-99fd016de407",
+      "AMBE-3000R-B"
+    ],
+    [
+      "94a88b3c-402e-4623-b3d1-38386de2b1af",
+      "AMBE-3000R-C"
+    ],
+    [
+      "13fd6bc3-564c-4dee-a2b2-4d5d41f96796",
+      "AMBE-3000R-D"
     ]
   ],
   "text_variables": {}

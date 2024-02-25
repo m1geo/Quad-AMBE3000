@@ -109,11 +109,11 @@
         )
       )
     )
-    (symbol "Connector:USB_C_Receptacle_USB2.0_14P" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (symbol "Connector:USB_C_Receptacle_USB2.0_16P" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 22.225 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "USB_C_Receptacle_USB2.0_14P" (at 0 19.685 0)
+      (property "Value" "USB_C_Receptacle_USB2.0_16P" (at 0 19.685 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 3.81 0 0)
@@ -125,14 +125,22 @@
       (property "ki_keywords" "usb universal serial bus type-C USB2.0" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "USB 2.0-only 14P Type-C Receptacle connector" (at 0 0 0)
+      (property "ki_description" "USB 2.0-only 16P Type-C Receptacle connector" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "USB*C*Receptacle*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "USB_C_Receptacle_USB2.0_14P_0_0"
+      (symbol "USB_C_Receptacle_USB2.0_16P_0_0"
         (rectangle (start -0.254 -17.78) (end 0.254 -16.764)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 -14.986) (end 9.144 -15.494)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 -12.446) (end 9.144 -12.954)
           (stroke (width 0) (type default))
           (fill (type none))
         )
@@ -165,7 +173,7 @@
           (fill (type none))
         )
       )
-      (symbol "USB_C_Receptacle_USB2.0_14P_0_1"
+      (symbol "USB_C_Receptacle_USB2.0_16P_0_1"
         (rectangle (start -10.16 17.78) (end 10.16 -17.78)
           (stroke (width 0.254) (type default))
           (fill (type background))
@@ -263,7 +271,7 @@
           (fill (type outline))
         )
       )
-      (symbol "USB_C_Receptacle_USB2.0_14P_1_1"
+      (symbol "USB_C_Receptacle_USB2.0_16P_1_1"
         (pin passive line (at 0 -22.86 90) (length 5.08)
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "A1" (effects (font (size 1.27 1.27))))
@@ -287,6 +295,10 @@
         (pin bidirectional line (at 15.24 2.54 180) (length 5.08)
           (name "D-" (effects (font (size 1.27 1.27))))
           (number "A7" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 -12.7 180) (length 5.08)
+          (name "SBU1" (effects (font (size 1.27 1.27))))
+          (number "A8" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 15.24 15.24 180) (length 5.08) hide
           (name "VBUS" (effects (font (size 1.27 1.27))))
@@ -315,6 +327,10 @@
         (pin bidirectional line (at 15.24 0 180) (length 5.08)
           (name "D-" (effects (font (size 1.27 1.27))))
           (number "B7" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 -15.24 180) (length 5.08)
+          (name "SBU2" (effects (font (size 1.27 1.27))))
+          (number "B8" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 15.24 15.24 180) (length 5.08) hide
           (name "VBUS" (effects (font (size 1.27 1.27))))
@@ -1194,9 +1210,6 @@
   (junction (at 94.615 162.56) (diameter 0) (color 0 0 0 0)
     (uuid 2b47c06b-ad27-4f27-8263-75e4b147f374)
   )
-  (junction (at 130.81 44.45) (diameter 0) (color 0 0 0 0)
-    (uuid 2b787392-12e1-4e01-a813-60d464d2d23b)
-  )
   (junction (at 140.97 148.59) (diameter 0) (color 0 0 0 0)
     (uuid 2e1f9552-ab62-4d6c-b48a-5a1dde27f8a4)
   )
@@ -1355,10 +1368,6 @@
     (stroke (width 0) (type default))
     (uuid 06948a7d-b88d-4180-9a85-4513105c509b)
   )
-  (wire (pts (xy 121.92 44.45) (xy 130.81 44.45))
-    (stroke (width 0) (type default))
-    (uuid 069c9424-ec08-43e2-affb-aed553a1dc1a)
-  )
   (wire (pts (xy 193.04 156.21) (xy 193.04 154.94))
     (stroke (width 0) (type default))
     (uuid 09085fab-cbff-48cd-b3c4-58529761961a)
@@ -1459,17 +1468,9 @@
     (stroke (width 0) (type default))
     (uuid 215b2ff4-47ce-47c3-a639-0c149e001103)
   )
-  (wire (pts (xy 248.92 134.62) (xy 248.92 135.89))
-    (stroke (width 0) (type default))
-    (uuid 227ae33d-26e1-4b80-88b5-792be308ae1c)
-  )
   (wire (pts (xy 200.66 43.815) (xy 200.66 45.72))
     (stroke (width 0) (type default))
     (uuid 2332d2fb-9b26-4a25-9cd6-0a82ffed3e19)
-  )
-  (wire (pts (xy 248.92 128.27) (xy 248.92 129.54))
-    (stroke (width 0) (type default))
-    (uuid 2418f6af-8abb-482a-8b0d-29ca8c80c0ad)
   )
   (wire (pts (xy 41.91 102.87) (xy 41.91 104.14))
     (stroke (width 0) (type default))
@@ -1575,10 +1576,6 @@
     (stroke (width 0) (type default))
     (uuid 438f3875-84b1-47c2-92fe-bc7afcafb528)
   )
-  (wire (pts (xy 121.92 51.435) (xy 121.92 52.705))
-    (stroke (width 0) (type default))
-    (uuid 44360fc0-32c7-48bd-950a-6f34df9e93c1)
-  )
   (wire (pts (xy 149.225 53.34) (xy 157.48 53.34))
     (stroke (width 0) (type default))
     (uuid 4589f9f8-d897-49d5-bb15-6159bcee8043)
@@ -1614,10 +1611,6 @@
   (wire (pts (xy 60.325 165.1) (xy 65.405 165.1))
     (stroke (width 0) (type default))
     (uuid 4c4fe173-b374-40b9-b579-cbbf39d90fb5)
-  )
-  (wire (pts (xy 121.92 44.45) (xy 121.92 46.355))
-    (stroke (width 0) (type default))
-    (uuid 4e17ef59-e093-4380-b77b-363dacba77bc)
   )
   (wire (pts (xy 134.62 142.24) (xy 137.16 142.24))
     (stroke (width 0) (type default))
@@ -1682,10 +1675,6 @@
   (wire (pts (xy 57.15 76.2) (xy 58.42 76.2))
     (stroke (width 0) (type default))
     (uuid 5ccf613d-6ac9-4916-b448-4a0af52161ea)
-  )
-  (wire (pts (xy 248.92 143.51) (xy 248.92 144.78))
-    (stroke (width 0) (type default))
-    (uuid 5e1d85ed-0ad0-4666-99d0-5237dd237f3f)
   )
   (wire (pts (xy 101.6 114.3) (xy 100.33 114.3))
     (stroke (width 0) (type default))
@@ -1826,6 +1815,10 @@
   (wire (pts (xy 182.88 156.21) (xy 185.42 156.21))
     (stroke (width 0) (type default))
     (uuid 8bff9edb-f1ad-4d86-9fd4-ec8246990bce)
+  )
+  (wire (pts (xy 218.44 144.78) (xy 232.41 144.78))
+    (stroke (width 0) (type default))
+    (uuid 8c49db32-ebed-412a-a68f-ca81a8d0fb01)
   )
   (wire (pts (xy 196.215 35.56) (xy 196.215 36.83))
     (stroke (width 0) (type default))
@@ -2211,10 +2204,6 @@
     (stroke (width 0) (type default))
     (uuid f6f9a430-040f-4c48-9a3e-7ab78280f67e)
   )
-  (wire (pts (xy 218.44 144.78) (xy 248.92 144.78))
-    (stroke (width 0) (type default))
-    (uuid f7506614-5210-408d-b519-de53e1d99e07)
-  )
   (wire (pts (xy 127.635 114.935) (xy 127.635 121.92))
     (stroke (width 0) (type default))
     (uuid f7c2fb5a-4d22-405c-b9f8-a7cd08e6804f)
@@ -2266,7 +2255,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5ca79060-fe0e-471a-9e76-306932d7a9e4)
   )
-  (text "1.8V VCORE Decoup." (at 121.285 43.18 0)
+  (text "1.8V VCORE" (at 130.81 43.18 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6fa1cda5-c7c5-4065-99ef-971be92f1b93)
   )
@@ -2316,9 +2305,13 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 57e7f196-d9a4-46df-90e4-cdfa8270bb2c)
   )
-  (label "USB_Dp" (at 118.745 81.28 0) (fields_autoplaced)
+  (label "USB_D+" (at 118.745 81.28 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 59af3dd9-8c29-4051-ba89-a210d937b0dd)
+  )
+  (label "FTDI_PWREN" (at 232.41 144.78 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 5cbd3241-1166-4daa-9756-6f2bb7018f53)
   )
   (label "FTDI_EE_CLK" (at 26.67 162.56 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -2348,7 +2341,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid dc7ae34e-977b-4038-80ac-253106462594)
   )
-  (label "USB_Dm" (at 118.745 78.74 0) (fields_autoplaced)
+  (label "USB_D-" (at 118.745 78.74 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ddcaebe8-ad10-4bb2-a501-ce277ede106e)
   )
@@ -2433,7 +2426,7 @@
   (symbol (lib_id "power:GND") (at 147.32 151.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 023394f1-b6b7-4b08-b0e6-889273fb4994)
-    (property "Reference" "#PWR033" (at 147.32 157.48 0)
+    (property "Reference" "#PWR032" (at 147.32 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.32 154.94 0)
@@ -2449,7 +2442,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -2458,7 +2451,7 @@
   (symbol (lib_id "power:GND") (at 222.885 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0427d962-f03d-470b-924e-f6a0af91a5fb)
-    (property "Reference" "#PWR043" (at 222.885 43.18 0)
+    (property "Reference" "#PWR042" (at 222.885 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 222.885 40.64 0)
@@ -2474,7 +2467,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -2533,7 +2526,7 @@
   (symbol (lib_id "Device:C_Small") (at 149.225 57.785 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0b4529b7-8bfd-4f7d-9e43-cea680933e77)
-    (property "Reference" "C15" (at 147.32 56.515 0)
+    (property "Reference" "C14" (at 147.32 56.515 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 147.32 59.055 0)
@@ -2550,7 +2543,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "C15") (unit 1)
+          (reference "C14") (unit 1)
         )
       )
     )
@@ -2660,10 +2653,54 @@
     )
   )
 
+  (symbol (lib_id "Connector:USB_C_Receptacle_USB2.0_16P") (at 41.91 78.74 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 1218f467-2f49-4782-a424-c15f6b1fd8ec)
+    (property "Reference" "J1" (at 41.91 57.15 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "USB_C" (at 41.91 59.69 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4110" (at 45.72 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 45.72 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C963217" (at 41.91 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "A6" (uuid 6149e16f-0062-42dd-b3f3-620857ecab93))
+    (pin "A4" (uuid 489c2ba3-d023-41ba-9f56-e7aa0eb4713b))
+    (pin "B7" (uuid bebf6ebd-60d8-4c53-b093-d443666fb137))
+    (pin "S1" (uuid c1cc6655-144b-42cc-9c04-87605bbd86ab))
+    (pin "B6" (uuid aa1e2aec-f40c-48a9-b4d2-7e1143810f1a))
+    (pin "A9" (uuid 06d55803-cc63-48fb-aba4-783d8f9733e5))
+    (pin "A1" (uuid c5da1cb3-0d5f-457a-b710-49cd9e2dca10))
+    (pin "B8" (uuid d23414bb-a3d1-48fd-aec1-cd9e7de1e523))
+    (pin "A12" (uuid fcca32cf-f6ef-479f-bc8c-5980faae1e62))
+    (pin "B9" (uuid d037d811-7816-498a-adf3-9bace4048a8a))
+    (pin "B5" (uuid ae341c38-c230-4cc2-b4f8-21de3a22bed2))
+    (pin "A5" (uuid 110d8f89-f8f0-46e4-848b-8e9107a55e5b))
+    (pin "B4" (uuid 2ae8a3bc-4a8a-4e7d-a33a-4dbb42ad6193))
+    (pin "A7" (uuid 4fcba8cd-e491-497b-8947-bfcc3635f9f5))
+    (pin "A8" (uuid 5200c18d-4aa9-4ecb-803a-f08e467e113a))
+    (pin "B12" (uuid 05aef100-c6ba-466d-ab87-1e18d0ec61c6))
+    (pin "B1" (uuid 37b70af7-cef1-41ea-84ef-1b912ec22872))
+    (instances
+      (project "Quad-AMBE3000"
+        (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
+          (reference "J1") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 130.81 52.705 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1aefdbe5-eaee-4105-b8b4-927654362356)
-    (property "Reference" "#PWR029" (at 130.81 59.055 0)
+    (property "Reference" "#PWR028" (at 130.81 59.055 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 130.81 56.515 0)
@@ -2679,7 +2716,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -2817,7 +2854,7 @@
   (symbol (lib_id "power:GND") (at 154.94 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3ed50b83-c3b9-471d-ae88-3aac6d3d4309)
-    (property "Reference" "#PWR037" (at 154.94 107.95 0)
+    (property "Reference" "#PWR036" (at 154.94 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 154.94 105.41 0)
@@ -2833,7 +2870,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
       )
     )
@@ -2842,7 +2879,7 @@
   (symbol (lib_id "power:GND") (at 213.995 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3fc2476b-d9bf-4968-9bc4-0db7c3b1010b)
-    (property "Reference" "#PWR042" (at 213.995 43.18 0)
+    (property "Reference" "#PWR041" (at 213.995 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 213.995 40.64 0)
@@ -2858,7 +2895,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -2921,7 +2958,7 @@
   (symbol (lib_id "power:GND") (at 196.215 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 449378f0-b731-4a76-a388-f7e79a3b798a)
-    (property "Reference" "#PWR040" (at 196.215 43.18 0)
+    (property "Reference" "#PWR039" (at 196.215 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 196.215 40.64 0)
@@ -2937,7 +2974,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -2971,7 +3008,7 @@
   (symbol (lib_id "power:GND") (at 129.54 151.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 480af9ae-c3cf-48cf-8dee-8c3c896f3a75)
-    (property "Reference" "#PWR028" (at 129.54 157.48 0)
+    (property "Reference" "#PWR027" (at 129.54 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 129.54 154.94 0)
@@ -2987,7 +3024,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -3065,7 +3102,7 @@
   (symbol (lib_id "power:GND") (at 140.97 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5754f252-5d07-4f94-86e8-83dd475d6668)
-    (property "Reference" "#PWR032" (at 140.97 156.21 0)
+    (property "Reference" "#PWR031" (at 140.97 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 140.97 153.67 0)
@@ -3081,36 +3118,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR032") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:LED") (at 248.92 139.7 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 57608ee4-83ac-45f4-837c-93338c1fa6d2)
-    (property "Reference" "D9" (at 251.46 137.795 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "GRN" (at 251.46 140.335 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 248.92 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 248.92 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Feature" "FTDI INIT" (at 256.54 143.51 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid bf7c40b8-5c7f-481c-8a76-3deb947bac66))
-    (pin "2" (uuid 5a54f885-9411-4d2f-9e5f-5ac8c650341c))
-    (instances
-      (project "Quad-AMBE3000"
-        (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "D9") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -3144,7 +3152,7 @@
   (symbol (lib_id "Device:C_Small") (at 213.995 33.02 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 59086717-0caf-4cb7-821c-38bc84d1721b)
-    (property "Reference" "C19" (at 215.9 31.75 0)
+    (property "Reference" "C18" (at 215.9 31.75 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 215.9 34.29 0)
@@ -3161,7 +3169,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "C19") (unit 1)
+          (reference "C18") (unit 1)
         )
       )
     )
@@ -3170,7 +3178,7 @@
   (symbol (lib_id "power:GND") (at 149.225 61.595 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5bff9a76-7f32-4220-adc4-1bb17792b06a)
-    (property "Reference" "#PWR035" (at 149.225 67.945 0)
+    (property "Reference" "#PWR034" (at 149.225 67.945 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 149.225 65.405 0)
@@ -3186,7 +3194,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
       )
     )
@@ -3221,7 +3229,7 @@
   (symbol (lib_id "power:GND") (at 205.105 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5d71f7c1-1437-4b49-acaa-65db9d5bf65d)
-    (property "Reference" "#PWR041" (at 205.105 43.18 0)
+    (property "Reference" "#PWR040" (at 205.105 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 205.105 40.64 0)
@@ -3237,7 +3245,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
     )
@@ -3351,7 +3359,7 @@
   (symbol (lib_id "Device:C_Small") (at 205.105 33.02 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6812d746-7db0-4994-91de-f6f2d484dac2)
-    (property "Reference" "C18" (at 207.01 31.75 0)
+    (property "Reference" "C17" (at 207.01 31.75 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 207.01 34.29 0)
@@ -3368,7 +3376,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "C18") (unit 1)
+          (reference "C17") (unit 1)
         )
       )
     )
@@ -3403,7 +3411,7 @@
   (symbol (lib_id "power:GND") (at 195.58 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7076f518-6668-45e4-9e3c-f159ff057220)
-    (property "Reference" "#PWR039" (at 195.58 163.83 0)
+    (property "Reference" "#PWR038" (at 195.58 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 195.58 161.29 0)
@@ -3419,7 +3427,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -3428,7 +3436,7 @@
   (symbol (lib_id "power:+3V3") (at 132.715 89.535 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 77656b18-bb23-4515-b190-a742402fbad8)
-    (property "Reference" "#PWR030" (at 132.715 93.345 0)
+    (property "Reference" "#PWR029" (at 132.715 93.345 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 132.715 85.725 0)
@@ -3444,7 +3452,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -3501,7 +3509,7 @@
     )
   )
 
-  (symbol (lib_id "Device:Crystal_GND24") (at 140.97 142.24 0) (unit 1)
+  (symbol (lib_id "Device:Crystal_GND24") (at 140.97 142.24 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7c578751-8c4f-48bf-a132-acb417721f8d)
     (property "Reference" "Y1" (at 143.51 134.62 0)
@@ -3535,7 +3543,7 @@
   (symbol (lib_id "power:+3V3") (at 149.225 41.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7eb39673-fa98-4f9b-ae24-7ec0554cf815)
-    (property "Reference" "#PWR034" (at 149.225 45.72 0)
+    (property "Reference" "#PWR033" (at 149.225 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 149.225 38.1 0)
@@ -3551,32 +3559,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR034") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3V3") (at 248.92 128.27 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 8045fdce-feea-4e3b-929c-eb2e7b1fd628)
-    (property "Reference" "#PWR044" (at 248.92 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 248.92 124.46 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 248.92 128.27 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 248.92 128.27 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1483dfdc-3165-4a35-bea9-ac41a9f7e9c2))
-    (instances
-      (project "Quad-AMBE3000"
-        (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
       )
     )
@@ -3585,7 +3568,7 @@
   (symbol (lib_id "Device:C_Small") (at 130.81 48.895 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8401b38e-9a17-4328-8eb9-4bcaec08bd26)
-    (property "Reference" "C12" (at 132.715 47.625 0)
+    (property "Reference" "C11" (at 132.715 47.625 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 132.715 50.165 0)
@@ -3602,7 +3585,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "C12") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -3688,7 +3671,7 @@
   (symbol (lib_id "power:+3V3") (at 193.04 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8efb8786-6700-4d97-9939-94557ee75b28)
-    (property "Reference" "#PWR038" (at 193.04 30.48 0)
+    (property "Reference" "#PWR037" (at 193.04 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 193.04 22.86 0)
@@ -3704,7 +3687,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
     )
@@ -3739,7 +3722,7 @@
   (symbol (lib_id "Device:C_Small") (at 129.54 147.32 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 918e5926-4b58-4880-a094-97a5bfaee984)
-    (property "Reference" "C11" (at 127.635 146.05 0)
+    (property "Reference" "C10" (at 127.635 146.05 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "27p" (at 127.635 148.59 0)
@@ -3756,7 +3739,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "C11") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -3853,48 +3836,6 @@
     )
   )
 
-  (symbol (lib_id "Connector:USB_C_Receptacle_USB2.0_14P") (at 41.91 78.74 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 947f5cf7-dd07-4e41-8a76-0f7696a78f08)
-    (property "Reference" "J1" (at 41.91 55.88 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "USB_C" (at 41.91 58.42 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4110" (at 45.72 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 45.72 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C963217" (at 41.91 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "A12" (uuid 5db6f704-cc06-4d20-b830-49cedf607201))
-    (pin "B12" (uuid ae0afbbb-4b75-4cef-9074-547a57305d6c))
-    (pin "A4" (uuid cd7eb816-8aab-4fca-88f6-c7e99042eb3a))
-    (pin "B1" (uuid 152e46ed-a2ad-4992-a872-b5238eb8a5e2))
-    (pin "B7" (uuid 06a251d2-5178-42e6-85a3-553ffe7b9ff0))
-    (pin "A5" (uuid 795afe5b-b9d6-42dd-9182-4d7f055619f4))
-    (pin "B6" (uuid bc0d6ea0-3b07-4473-bb1c-2f7683eff3cc))
-    (pin "A7" (uuid a77383ae-4f79-4037-b147-5aea6613bb9e))
-    (pin "B9" (uuid c74ea432-3f1a-4569-a0fd-86beb45717bb))
-    (pin "B5" (uuid 66381b70-0187-4def-90ea-dbe9d2887e0b))
-    (pin "A6" (uuid bf130c6c-1990-4bef-96e0-d68a426b52b6))
-    (pin "A1" (uuid 8d766b57-cfc7-4ce1-8182-3f80fbf74415))
-    (pin "A9" (uuid 21d35865-585d-4910-844d-7897de20b3f5))
-    (pin "B4" (uuid a36a412e-3f5c-4cdf-a2ad-a8c5892f76a6))
-    (pin "S1" (uuid 3d9550d4-1322-44b7-abae-b17a72f68d48))
-    (instances
-      (project "Quad-AMBE3000"
-        (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "J1") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:C_Small") (at 93.98 34.29 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 94c6903e-596a-4d67-b356-cdd3eb389dea)
@@ -3950,7 +3891,7 @@
   (symbol (lib_id "Device:C_Small") (at 139.7 48.895 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9c172984-126c-4c4e-8a9c-a1c4cdc95188)
-    (property "Reference" "C13" (at 141.605 47.625 0)
+    (property "Reference" "C12" (at 141.605 47.625 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 141.605 50.165 0)
@@ -3967,7 +3908,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "C13") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
     )
@@ -3976,7 +3917,7 @@
   (symbol (lib_id "Device:C_Small") (at 222.885 33.02 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9dddae0e-fc93-4a7a-879e-9440decf90ae)
-    (property "Reference" "C20" (at 224.79 31.75 0)
+    (property "Reference" "C19" (at 224.79 31.75 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 224.79 34.29 0)
@@ -3993,7 +3934,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "C20") (unit 1)
+          (reference "C19") (unit 1)
         )
       )
     )
@@ -4031,7 +3972,7 @@
   (symbol (lib_id "power:+3V3") (at 127.635 107.315 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a2adbf01-8043-4841-83e8-8af92b808129)
-    (property "Reference" "#PWR027" (at 127.635 111.125 0)
+    (property "Reference" "#PWR026" (at 127.635 111.125 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 127.635 103.505 0)
@@ -4047,7 +3988,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -4234,7 +4175,7 @@
   (symbol (lib_id "power:GND") (at 154.305 66.675 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b75ee759-6e6a-46d9-b939-e4a04e8e2f23)
-    (property "Reference" "#PWR036" (at 154.305 73.025 0)
+    (property "Reference" "#PWR035" (at 154.305 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 154.305 70.485 0)
@@ -4250,7 +4191,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
       )
     )
@@ -4259,7 +4200,7 @@
   (symbol (lib_id "power:GND") (at 139.7 52.705 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bc283895-b78f-4891-8dc9-410febf44b6a)
-    (property "Reference" "#PWR031" (at 139.7 59.055 0)
+    (property "Reference" "#PWR030" (at 139.7 59.055 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 139.7 56.515 0)
@@ -4275,7 +4216,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
     )
@@ -4361,7 +4302,7 @@
   (symbol (lib_id "Device:C_Small") (at 147.32 147.32 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c68c3483-303c-4fc1-b48c-6a71e793023f)
-    (property "Reference" "C14" (at 149.225 146.05 0)
+    (property "Reference" "C13" (at 149.225 146.05 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "27p" (at 149.225 148.59 0)
@@ -4378,7 +4319,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "C14") (unit 1)
+          (reference "C13") (unit 1)
         )
       )
     )
@@ -4413,7 +4354,7 @@
   (symbol (lib_id "Device:C_Small") (at 154.305 62.865 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ceb48744-736b-425e-a63e-ef33d38ab863)
-    (property "Reference" "C16" (at 156.21 61.595 0)
+    (property "Reference" "C15" (at 156.21 61.595 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "4u7" (at 156.21 64.135 0)
@@ -4430,33 +4371,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "C16") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 121.92 48.895 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ceef353e-b777-44e7-9c0b-8c3549ce43f4)
-    (property "Reference" "C10" (at 123.825 47.625 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "100n" (at 123.825 50.165 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 121.92 48.895 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 121.92 48.895 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a1effdff-aa88-4b2f-9dfa-99dfb3e9dd43))
-    (pin "2" (uuid 35ce303b-872e-4433-9fe3-ec7e7e263049))
-    (instances
-      (project "Quad-AMBE3000"
-        (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "C10") (unit 1)
+          (reference "C15") (unit 1)
         )
       )
     )
@@ -4465,7 +4380,7 @@
   (symbol (lib_id "Device:C_Small") (at 196.215 33.02 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cefc00f7-8fa0-47d0-be48-e998983651cb)
-    (property "Reference" "C17" (at 198.12 31.75 0)
+    (property "Reference" "C16" (at 198.12 31.75 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 198.12 34.29 0)
@@ -4482,7 +4397,7 @@
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "C17") (unit 1)
+          (reference "C16") (unit 1)
         )
       )
     )
@@ -4702,31 +4617,6 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 121.92 52.705 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e61e1da4-d5e6-4ebe-ad6f-550209ddc23d)
-    (property "Reference" "#PWR026" (at 121.92 59.055 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 121.92 56.515 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 121.92 52.705 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 121.92 52.705 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 79dfeb1d-3d10-4e6e-a5ff-2c5e804d797c))
-    (instances
-      (project "Quad-AMBE3000"
-        (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "#PWR026") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R_Small") (at 127.635 112.395 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ea6ff97a-a11d-4984-baa0-a9d21c138a92)
@@ -4774,32 +4664,6 @@
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
           (reference "C5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 248.92 132.08 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ebdfa627-c1f6-4031-a98e-e868776d6b88)
-    (property "Reference" "R23" (at 251.46 130.81 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "330R" (at 251.46 133.35 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 248.92 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 248.92 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid b672d309-0751-40d6-a3e9-68b39a6d24e0))
-    (pin "1" (uuid 305cf151-cc0d-4341-848e-828d283c4d0e))
-    (instances
-      (project "Quad-AMBE3000"
-        (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/df0befc9-05f8-415a-a570-bc0f76fdc635"
-          (reference "R23") (unit 1)
         )
       )
     )

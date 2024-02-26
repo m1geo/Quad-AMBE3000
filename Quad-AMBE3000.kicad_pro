@@ -496,7 +496,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "/media/nas/storage/PCBs/m1geo_g8ocv_template.kicad_wks",
-    "plot_directory": "",
+    "plot_directory": "outputs/",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,

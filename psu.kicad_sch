@@ -1136,15 +1136,15 @@
     (property "LCSC" "C105265" (at 167.64 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "4" (uuid e8c561f0-3159-4d76-a197-230af9d64195))
-    (pin "2" (uuid 5bd46be5-17d4-4937-9560-9d5fb946ea0e))
-    (pin "8" (uuid fc323383-478a-4800-8666-ac6b8c7249c9))
     (pin "1" (uuid 258cc7e4-c932-4226-8162-b85e46b8d0f9))
+    (pin "2" (uuid 5bd46be5-17d4-4937-9560-9d5fb946ea0e))
+    (pin "3" (uuid b5c3bdc2-90ff-49b0-81e9-2be75b906900))
+    (pin "4" (uuid e8c561f0-3159-4d76-a197-230af9d64195))
     (pin "5" (uuid db932455-29ef-4af4-b5a2-85ce6e4ec5f0))
     (pin "6" (uuid 05ed91c6-05d5-4507-9920-87a9c7134968))
     (pin "7" (uuid 66684e93-3423-47b1-aeca-9a46fa72f85d))
+    (pin "8" (uuid fc323383-478a-4800-8666-ac6b8c7249c9))
     (pin "9" (uuid 4d513620-fb92-4bd4-877f-b66a33af2a43))
-    (pin "3" (uuid b5c3bdc2-90ff-49b0-81e9-2be75b906900))
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/92183cc1-aa9d-441a-bbf6-7a4289b4d708"
@@ -1655,8 +1655,8 @@
     (property "LCSC" "C217957" (at 100.33 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 0699a10a-1202-4955-8639-fbfc9e20b93a))
     (pin "1" (uuid dbe928f1-d59e-4081-8a38-f4dcca35910c))
+    (pin "2" (uuid 0699a10a-1202-4955-8639-fbfc9e20b93a))
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/92183cc1-aa9d-441a-bbf6-7a4289b4d708"
@@ -1713,8 +1713,8 @@
     (property "LCSC" "C22790" (at 186.69 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 6052f65b-7014-4231-a2a4-d2e71802ce42))
     (pin "1" (uuid ac1ddb32-c9ad-442a-8046-03bdfbb3ba6c))
+    (pin "2" (uuid 6052f65b-7014-4231-a2a4-d2e71802ce42))
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/92183cc1-aa9d-441a-bbf6-7a4289b4d708"
@@ -1817,8 +1817,8 @@
     (property "LCSC" "C217957" (at 150.495 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 56c165a5-161d-487e-a391-6380d5ed7aea))
     (pin "1" (uuid d2038ed6-ef6b-4bf0-9999-58639619177d))
+    (pin "2" (uuid 56c165a5-161d-487e-a391-6380d5ed7aea))
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/92183cc1-aa9d-441a-bbf6-7a4289b4d708"
@@ -1954,8 +1954,8 @@
     (property "LCSC" "C23138" (at 222.25 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 3c29d628-04d7-4510-9739-39def7eedbfd))
     (pin "1" (uuid bcb173c1-8033-4ede-b17f-3ed72b26f1a6))
+    (pin "2" (uuid 3c29d628-04d7-4510-9739-39def7eedbfd))
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/92183cc1-aa9d-441a-bbf6-7a4289b4d708"
@@ -2012,8 +2012,8 @@
     (property "LCSC" "C217957" (at 67.945 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 8179dc0c-666e-4f30-8cbe-0878e98230a8))
     (pin "1" (uuid 791ec7a7-84af-4f1c-ae42-55d10a19768f))
+    (pin "2" (uuid 8179dc0c-666e-4f30-8cbe-0878e98230a8))
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/92183cc1-aa9d-441a-bbf6-7a4289b4d708"
@@ -2041,15 +2041,15 @@
     (property "LCSC" "C105265" (at 85.09 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "4" (uuid 0ded020b-c72c-4879-8569-1372f751b0da))
-    (pin "2" (uuid 4f12dc74-3740-4759-90dd-80f13ec80141))
-    (pin "8" (uuid f0fb945b-880d-47a7-88b4-e66850ebb661))
     (pin "1" (uuid c078fefe-dbbd-4a76-a346-135d7b6289dc))
+    (pin "2" (uuid 4f12dc74-3740-4759-90dd-80f13ec80141))
+    (pin "3" (uuid c3a79181-2072-49b0-96b7-670587171355))
+    (pin "4" (uuid 0ded020b-c72c-4879-8569-1372f751b0da))
     (pin "5" (uuid fd6f6b1c-366d-410a-92a7-f972db6ce1f3))
     (pin "6" (uuid c3c0ae1f-0d52-4bba-aba6-f6e64b0542ed))
     (pin "7" (uuid b14f747a-f57d-4973-896b-4e72d1a498ac))
+    (pin "8" (uuid f0fb945b-880d-47a7-88b4-e66850ebb661))
     (pin "9" (uuid 2c0b36ec-3182-41cb-9468-fd145a26d90c))
-    (pin "3" (uuid c3a79181-2072-49b0-96b7-670587171355))
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/92183cc1-aa9d-441a-bbf6-7a4289b4d708"
@@ -2127,8 +2127,8 @@
     (property "LCSC" "C22809" (at 182.88 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 2282b9be-91d8-4909-8c45-a50e2bf39e93))
     (pin "1" (uuid 039ce3c4-b8c6-4742-bb64-a022e7c5f15d))
+    (pin "2" (uuid 2282b9be-91d8-4909-8c45-a50e2bf39e93))
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/92183cc1-aa9d-441a-bbf6-7a4289b4d708"
@@ -2389,8 +2389,8 @@
     (property "LCSC" "C25804" (at 104.14 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid e450165a-a2e9-49f8-83dd-4a22977e13f4))
     (pin "1" (uuid b7e313e5-1f51-4d0b-a45b-c08ba034da01))
+    (pin "2" (uuid e450165a-a2e9-49f8-83dd-4a22977e13f4))
     (instances
       (project "Quad-AMBE3000"
         (path "/5724fa40-164f-4058-9cc8-ef80d9809dcd/92183cc1-aa9d-441a-bbf6-7a4289b4d708"

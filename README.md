@@ -9,10 +9,18 @@ Using four AMBE-3003 parts gives a total of 12 similtaneous transcode streams. t
 
 The DVSI AMBE parts can be purchased in low volume from the [DVSI Inc. Hardware Product Pricing](https://www.dvsinc.com/products/price.shtml) page. You will need to create a purchase order to buy from DVSI.
 
+# Schematic
+
+[PDF cchematic can be found here](outputs/Quad-AMBE3000_Sch.pdf)
+
 # Images
+
+![Front PCB](outputs/Quad-AMBE3000_Image.png)
+
+![OpenWebRX CodecServer](outputs/Quad-AMBE3000_CodecServer.png)
+
+# 3D Renders
 
 ![Front Render](outputs/Quad-AMBE3000_F.png)
 
 ![Rear Render](outputs/Quad-AMBE3000_R.png)
-
-[PDF cchematic can be found here](outputs/Quad-AMBE3000_Sch.pdf)

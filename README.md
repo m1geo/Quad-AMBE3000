@@ -11,7 +11,7 @@ The DVSI AMBE parts can be purchased in low volume from the [DVSI Inc. Hardware 
 
 # Schematic
 
-[PDF cchematic can be found here](outputs/Quad-AMBE3000_Sch.pdf)
+[PDF schematic can be found here](outputs/Quad-AMBE3000_Sch.pdf)
 
 # Images
 

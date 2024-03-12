@@ -9,6 +9,12 @@ Using four AMBE-3003 parts gives a total of 12 similtaneous transcode streams. t
 
 The DVSI AMBE parts can be purchased in low volume from the [DVSI Inc. Hardware Product Pricing](https://www.dvsinc.com/products/price.shtml) page. You will need to create a purchase order to buy from DVSI.
 
+# Assembly
+
+The design schematic include details for [JLCPCB](https://jlcpcb.com/) assembly, who assembled mine. You'll likely have to reflow the DVSI AMBE-3000R part yourself, which I did with a PCB reflow hotplate, but you can do any way you wish.
+
+Each schematic component has a [JLCPCB Parts](https://jlcpcb.com/parts)/[LCSC](https://www.lcsc.com/) part number (Cxxxxxx), which an be exported to the BoM using the extra field "LCSC".
+
 # Schematic
 
 [PDF schematic can be found here](outputs/Quad-AMBE3000_Sch.pdf)

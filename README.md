@@ -13,7 +13,7 @@ The DVSI AMBE parts can be purchased in low volume from the [DVSI Inc. Hardware 
 
 The design schematic include details for [JLCPCB](https://jlcpcb.com/) assembly, who assembled mine. You'll likely have to reflow the DVSI AMBE-3000R part yourself, which I did with a PCB reflow hotplate, but you can do any way you wish.
 
-Each schematic component has a [JLCPCB Parts](https://jlcpcb.com/parts)/[LCSC](https://www.lcsc.com/) part number (Cxxxxxx), which an be exported to the BoM using the extra field "LCSC".
+Each schematic component has a [JLCPCB Parts](https://jlcpcb.com/parts)/[LCSC](https://www.lcsc.com/) part number (Cxxxxxx), which can be exported to the BoM using the extra field "LCSC".
 
 # Schematic
 
